@@ -27,10 +27,18 @@ public class MainActivity extends AppCompatActivity {
         //Request Database
         myManage = new MyManage(this);
 
-        //Button Controller
+        //Button Controller git
         buttonController();
 
+        //Tester Add Value
+        tester();
+
     } //main method
+
+    private  void tester() {
+        myManage.addValueToSQLite(1, "user", "pass", "name");
+        myManage.addValueToSQLite(2, "food", "price", "source");
+    }
 
     private void buttonController() {
 
